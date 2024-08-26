@@ -58,15 +58,13 @@ function Header() {
         <nav className="navItems">
           <ul className="hidden navitem lg:flex w-full justify-center">
             {navItems.map((items, index) => (
-              <div className="flex mx-1 items-center">
+              <div className="flex mx-1 items-center" key={index}>
                 <div
                   className={`w-5 h-5 ${
                     items.selected ? "bg-blue-400" : "bg-gray-200"
                   } rounded-tl-3xl rounded-br-3xl`}
                 ></div>
-                <li className="mx-2" key={index}>
-                  {items.name}
-                </li>
+                <li className="mx-2">{items.name}</li>
               </div>
             ))}
           </ul>
