@@ -1,11 +1,11 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
 
-function Search({ bgColor, placeholder, text, className }) {
+function Search({ bgColor = "", text, className }) {
   return (
-    <span className={`search flex items-center ${className}`}>
+    <span className={`search flex items-center ${className} ${bgColor}`}>
       <input
-        className={`outline-2 outline-blue-400 mx-2`}
+        className={` outline-none  mx-2 ${bgColor} placeholder-blue-400`}
         placeholder="Suchen"
         type="text"
         id=""

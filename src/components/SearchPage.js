@@ -6,12 +6,14 @@ import { Pagination, PaginationItem } from "@mui/material";
 import { green } from "@mui/material/colors";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import BottomDrawer from "./BottomDrawer";
 
 function SearchPage() {
   return (
     <>
+      <BottomDrawer />
       <div className="flex w-full">
-        <Sidebar className="w-3/12  flex flex-col mr-8" />
+        <Sidebar className="w-3/12 hidden lg:flex flex-col mr-8 " />
         <div className="px-2 grid grid-cols-2 md:grid-cols-3 gap-4">
           {/* Row 1 */}
           <Card showBorder={true} />

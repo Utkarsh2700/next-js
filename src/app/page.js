@@ -1,7 +1,6 @@
 import Container from "@/components/Container";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import SearchPage from "@/components/SearchPage";
 import dynamic from "next/dynamic";
 const DynamicSearchPage = dynamic(() => import("@/components/SearchPage"), {
   loading: () => <p>Loading...</p>,
