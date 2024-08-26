@@ -12,7 +12,7 @@ function SearchPage() {
   return (
     <>
       <BottomDrawer />
-      <div className="flex w-full">
+      <div className="flex w-full justify-between">
         <Sidebar className="w-3/12 hidden lg:flex flex-col mr-8 " />
         <div className="px-2 grid grid-cols-2 md:grid-cols-3 gap-4">
           {/* Row 1 */}

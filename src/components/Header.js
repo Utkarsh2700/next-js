@@ -112,9 +112,11 @@ function Header() {
         </div>
       </div>
       <div className="Bluten flex flex-col md:flex-row justify-between items-center text-xs sm:text-base">
-        <span className="left my-2 sm:py-0 blutenIcon flex items-center w-full lg:w-[10%] justify-center lg:justify-normal">
+        <span className="left my-2 sm:py-0 blutenIcon flex items-center w-full lg:w-[25%] justify-center lg:justify-normal">
           <div className="h-5 w-5 rounded-tl-2xl rounded-br-2xl bg-blue-400 mx-2 hidden sm:block"></div>
-          <h3>Bluten</h3>
+          <h3 className="text-center  text-green-900 font-bold text-2xl">
+            Bluten
+          </h3>
           <Search
             className="mobile mx-2 sm:mx-4 px-2 py-2 rounded-full lg:hidden outline-none"
             bgColor="bg-[#ccc]"
