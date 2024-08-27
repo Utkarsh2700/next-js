@@ -57,7 +57,7 @@ function Sidebar({ className }) {
   };
 
   function getData(data) {
-    setPercentage(data);
+    setValue(data);
   }
 
   const [percent, setPercent] = React.useState([1, 5]);
